@@ -112,7 +112,7 @@ def subscribe_socket(ws : WebSocket):
         try:
             read_ws(ws)
         except Exception as e:
-            print("FAILED TO READ WEBSOCKET",e)
+            # print("FAILED TO READ WEBSOCKET",e)
             ws.close()
 
     print("WEBSOCKET CLOSED!")
